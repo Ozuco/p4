@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuestionario</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h1 id="Titulo">Cuestionario</h1>
+    <div id="inicioCuestionario">
+        <p>Este cuestionario trata sobre la historia del mundo. Es muy importante saber de dónde venimos para poder determinar hacia dónde vamos.</p>
+        <figure>
+            <img id="vieja" src="cuadro.jpg" alt="Imagen del cuestionario" height="300" width="400">
+            <figcaption>Vieja friendo huevos - Diego Velázquez 1618</figcaption>
+        </figure><br>
+        <button onclick="empezarJugar()">Empezar a jugar</button>
+    </div>
+    <div id="preguntasCuestionario">
+        <h3 id="numPregunta">Pregunta número</h3>
+        <p id="enunciado">
+            Este es el enunciado de la pregunta.
+        </p>
+        <button id="opc1" class="opcion" onclick="corregir(id)">Primera opción</button> <br>
+        <button id="opc2" class="opcion" onclick="corregir(id)">Segunda opción</button> <br>
+        <button id="opc3" class="opcion" onclick="corregir(id)">Tercera opción</button> <br>
+        <button id="opc4" class="opcion" onclick="corregir(id)">Cuarta opción</button> <br>
+    </div>
+    <div id="respuestaCuestionario">
+        <button onclick="sigPregunta()">Siguiente pregunta</button>
+    </div>
+</body>
+<script src="./index.js"></script>
+</html>
